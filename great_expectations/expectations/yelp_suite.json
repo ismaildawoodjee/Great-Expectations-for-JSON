@@ -1,0 +1,20 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "yelp_suite",
+  "expectations": [],
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "yelp_academic_dataset_business_clean.json",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "yelp_businesses",
+          "limit": 1000
+        },
+        "citation_date": "2021-07-22T15:33:16.413982Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.13.23"
+  }
+}
