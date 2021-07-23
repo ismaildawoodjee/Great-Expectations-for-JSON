@@ -1,0 +1,353 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "yelp_suite_updated",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "business_id",
+          "name",
+          "address",
+          "city",
+          "state",
+          "postal_code",
+          "latitude",
+          "longitude",
+          "stars",
+          "review_count",
+          "is_open",
+          "attributes_RestaurantsTableService",
+          "attributes_WiFi",
+          "attributes_BikeParking",
+          "attributes_BusinessAcceptsCreditCards",
+          "attributes_RestaurantsReservations",
+          "attributes_WheelchairAccessible",
+          "attributes_Caters",
+          "attributes_OutdoorSeating",
+          "attributes_RestaurantsGoodForGroups",
+          "attributes_HappyHour",
+          "attributes_BusinessAcceptsBitcoin",
+          "attributes_RestaurantsPriceRange2",
+          "attributes_HasTV",
+          "attributes_Alcohol",
+          "attributes_DogsAllowed",
+          "attributes_RestaurantsTakeOut",
+          "attributes_NoiseLevel",
+          "attributes_RestaurantsAttire",
+          "attributes_RestaurantsDelivery",
+          "categories",
+          "hours_Monday",
+          "hours_Tuesday",
+          "hours_Wednesday",
+          "hours_Thursday",
+          "hours_Friday",
+          "hours_Saturday",
+          "hours_Sunday",
+          "attributes_GoodForKids",
+          "attributes_ByAppointmentOnly",
+          "attributes_AcceptsInsurance",
+          "attributes_HairSpecializesIn",
+          "attributes_GoodForDancing",
+          "attributes_BestNights",
+          "attributes_Music",
+          "attributes_BYOB",
+          "attributes_CoatCheck",
+          "attributes_Smoking",
+          "attributes_DriveThru",
+          "attributes_BYOBCorkage",
+          "attributes_Corkage",
+          "attributes_RestaurantsCounterService",
+          "attributes_AgesAllowed",
+          "attributes_DietaryRestrictions",
+          "attributes_Open24Hours"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "state",
+        "regex": "[A-Z][A-Z]"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "state",
+        "mostly": 0.99
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "state",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "postal_code"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "postal_code",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "latitude",
+        "max_value": 90.0,
+        "min_value": -90.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "latitude"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "latitude",
+        "type_list": [
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT8",
+          "FLOAT64",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL",
+          "REAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "longitude",
+        "max_value": 180.0,
+        "min_value": -180.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "longitude"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "longitude",
+        "type_list": [
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT8",
+          "FLOAT64",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL",
+          "REAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "stars",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "stars",
+        "max_value": 5.0,
+        "min_value": 5.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "stars",
+        "value_set": [
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "stars"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "stars",
+        "type_list": [
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT8",
+          "FLOAT64",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL",
+          "REAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "is_open",
+        "max_value": 0,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "is_open",
+        "max_value": 1,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "is_open",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "is_open"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "is_open",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "INTEGER",
+          "INT64",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "great_expectations_version": "0.13.23"
+  }
+}
