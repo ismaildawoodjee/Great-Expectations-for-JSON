@@ -2,3 +2,5 @@
 .vscode
 .metals
 .ipynb_checkpoints
+
+*.json
